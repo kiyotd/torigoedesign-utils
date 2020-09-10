@@ -1,6 +1,9 @@
 # README
 
-Utility library for me :)
+Utility library
+
+[![npm version](https://badge.fury.io/js/%40torigoedesign%2Futils.svg)](https://badge.fury.io/js/%40torigoedesign%2Futils)
+[![GitHub version](https://badge.fury.io/gh/kiyotd%2Ftorigoedesign-utils.svg)](https://badge.fury.io/gh/kiyotd%2Ftorigoedesign-utils)
 
 ## Installation
 
