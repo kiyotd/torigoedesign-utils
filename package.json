@@ -1,0 +1,32 @@
+{
+  "name": "@torigoedesign/utils",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "description": "Utility library for me",
+  "license": "MIT",
+  "author": {
+    "name": "kiyotd",
+    "email": "torigoedesign+kiyotd@gmail.com",
+    "url": "https://twitter.com/_kiyotd"
+  },
+  "homepage": "https://github.com/kiyotd/torigoedesign-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiyotd/torigoedesign-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiyotd/torigoedesign-utils/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}
