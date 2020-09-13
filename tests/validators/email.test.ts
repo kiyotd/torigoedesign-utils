@@ -1,4 +1,4 @@
-import { isEmail } from "../../src/validators/email";
+import { isEmail } from "../../src";
 
 test("email example@example.com valid", () => {
   expect(isEmail("example@example.com")).toBe(true);

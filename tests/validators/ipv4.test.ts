@@ -1,4 +1,4 @@
-import { isIPv4 } from "../../src/validators/ipv4";
+import { isIPv4 } from "../../src";
 
 test("192.168.0.1 is valid", () => {
   expect(isIPv4("192.168.0.1")).toBe(true);
