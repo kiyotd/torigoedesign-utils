@@ -1,0 +1,53 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "simple-import-sort/sort": "error",
+    "no-debugger": "off",
+    "no-inner-declarations": "off",
+    "no-unused-vars": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+          "warn",
+          {
+            "allowExpressions": true
+          }
+        ],
+        "prefer-const": "off"
+        //    "@typescript-eslint/no-explicit-any": "error",
+      }
+    }
+  ]
+}
