@@ -1,5 +1,17 @@
 .idea
 node_modules
 coverage
-*.tgz
+tests
+src
 
+package.json
+package-lock.json
+
+.*ignore
+.*rc
+jest.config.js
+tsconfig.json
+webpack.config.js
+
+*.tgz
+dist/**/*.js.map

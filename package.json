@@ -1,6 +1,6 @@
 {
   "name": "@torigoedesign/utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "description": "Utility library for me",
   "license": "MIT",
@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "build2": "npx webpack --config webpack.config.js",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -39,6 +40,9 @@
     "jest": "^26.4.2",
     "prettier": "^2.1.1",
     "ts-jest": "^26.3.0",
-    "typescript": "^4.0.2"
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
