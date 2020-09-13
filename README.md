@@ -32,6 +32,14 @@ import { kebabCaseToCamelCase } from "@torigoedesign/utils";
 kebabCaseToCamelCase("set-user-name"); // setUserName
 ```
 
+#### camelCase to kebab-case 
+
+```typescript
+import { camelCaseToKebabCase } from "@torigoedesign/utils";
+
+camelCaseToKebabCase("setUserName"); // set-user-name
+```
+
 ### Validation
 
 #### Email address validation
