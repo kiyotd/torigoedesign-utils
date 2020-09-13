@@ -18,8 +18,8 @@ const strToUpperCase = (match: string, offset: string): string => {
  * console.log(result); // "setUserName"
  */
 
-function kebabCaseToCamelCase(str: string): string {
+const kebabCaseToCamelCase = (str: string): string => {
   return str.replace(regex, strToUpperCase);
-}
+};
 
 export { kebabCaseToCamelCase };
