@@ -1,7 +1,7 @@
 import { isEmail } from "../../src"
 
-test("email luc@perdu.com valid", () => {
-  expect(isEmail("luc@perdu.com")).toBe(true)
+test("email example@example.com valid", () => {
+  expect(isEmail("example@example.com")).toBe(true)
 })
 
 test("Empty string not valid", () => {
@@ -9,9 +9,9 @@ test("Empty string not valid", () => {
 })
 
 test("No double @ in an email", () => {
-  expect(isEmail("martin@toto@titi.com")).toBe(false)
+  expect(isEmail("exa@mple@example.com")).toBe(false)
 })
 
 test("not trimed email to be false", () => {
-  expect(isEmail(" luc@perdu.com ")).toBe(false)
+  expect(isEmail(" example@example.com ")).toBe(false)
 })
