@@ -20,9 +20,11 @@ Using npm:
 npm install @torigoedesign/utils
 ```
 
-## Usage
+## Documentation
 
-### Converter
+[docs](https://docs-torigoedesign-utils.vercel.app/)
+
+## Examples
 
 #### kebab-case to camelCase
 
@@ -39,8 +41,6 @@ import { camelCaseToKebabCase } from "@torigoedesign/utils";
 
 camelCaseToKebabCase("setUserName"); // set-user-name
 ```
-
-### Validator
 
 #### Email address validation
 
