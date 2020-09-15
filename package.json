@@ -22,7 +22,7 @@
     "build2": "npx webpack --config webpack.config.js",
     "test": "jest",
     "coverage": "jest --coverage",
-    "build:docs": "typedoc --out docs src"
+    "build:docs": "typedoc --out docs --exclude src/index.ts src"
   },
   "dependencies": {},
   "devDependencies": {
