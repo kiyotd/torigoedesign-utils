@@ -22,7 +22,7 @@ npm install @torigoedesign/utils
 
 ## Usage
 
-### Convert
+### Converter
 
 #### kebab-case to camelCase
 
@@ -40,7 +40,7 @@ import { camelCaseToKebabCase } from "@torigoedesign/utils";
 camelCaseToKebabCase("setUserName"); // set-user-name
 ```
 
-### Validation
+### Validator
 
 #### Email address validation
 

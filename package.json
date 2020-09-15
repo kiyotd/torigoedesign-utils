@@ -21,7 +21,8 @@
     "build": "tsc",
     "build2": "npx webpack --config webpack.config.js",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "build:doc": "typedoc --out docs src"
   },
   "dependencies": {},
   "devDependencies": {
