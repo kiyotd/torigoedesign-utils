@@ -1,5 +1,5 @@
 /**
- *
+ * Is the email format correct?
  * @param email
  * @returns {boolean}
  */

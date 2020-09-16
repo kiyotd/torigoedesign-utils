@@ -9,7 +9,6 @@ const regex: RegExp = /([a-z0-9]|(?=[A-Z]))([A-Z])/g;
  * const result = camelCaseToKebabCase("setUserName");
  * console.log(result); // "set-user-name"
  */
-
 const camelCaseToKebabCase = (str: string): string => {
   return str.replace(regex, "$1-$2").toLowerCase();
 };
