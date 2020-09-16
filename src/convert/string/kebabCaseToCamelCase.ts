@@ -13,11 +13,9 @@ const strToUpperCase = (match: string, offset: string): string => {
 
 /**
  * Convert from kebab case to camel case.
- * @example
- * const result = kebabCaseToCamelCase("set-user-name");
- * console.log(result); // "setUserName"
+ *
+ * @example kebabCaseToCamelCase("set-user-name"); // "setUserName"
  */
-
 const kebabCaseToCamelCase = (str: string): string => {
   return str.replace(regex, strToUpperCase);
 };
