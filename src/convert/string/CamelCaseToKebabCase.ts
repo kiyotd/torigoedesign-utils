@@ -8,8 +8,8 @@ const regex: RegExp = /([a-z0-9]|(?=[A-Z]))([A-Z])/g;
  *
  * @example camelCaseToKebabCase("setUserName"); // "set-user-name"
  */
-const camelCaseToKebabCase = (str: string): string => {
+function camelCaseToKebabCase(str: string): string {
   return str.replace(regex, "$1-$2").toLowerCase();
-};
+}
 
 export { camelCaseToKebabCase };
