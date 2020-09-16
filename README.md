@@ -61,4 +61,4 @@ isIPv4("255.255.255.256"); // false
 ```
 
 ## License
-MIT
+The MIT License
