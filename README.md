@@ -60,5 +60,7 @@ isIPv4("255.255.255.255"); // true
 isIPv4("255.255.255.256"); // false
 ```
 
+See the [docs](https://docs-torigoedesign-utils.vercel.app/) for other functions.
+
 ## License
 The MIT License
