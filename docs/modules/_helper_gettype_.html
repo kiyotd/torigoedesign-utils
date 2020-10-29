@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;validate/ipv4&quot; | @torigoedesign/utils</title>
+	<title>&quot;helper/getType&quot; | @torigoedesign/utils</title>
 	<meta name="description" content="Documentation for @torigoedesign/utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_validate_ipv4_.html">&quot;validate/ipv4&quot;</a>
+					<a href="_helper_gettype_.html">&quot;helper/getType&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;validate/ipv4&quot;</h1>
+			<h1>Module &quot;helper/getType&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_validate_ipv4_.html#isipv4" class="tsd-kind-icon">isIPv4</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_helper_gettype_.html#gettype" class="tsd-kind-icon">get<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,40 +82,41 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="isipv4" class="tsd-anchor"></a>
-					<h3>isIPv4</h3>
+					<a name="gettype" class="tsd-anchor"></a>
+					<h3>get<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">isIPv4<span class="tsd-signature-symbol">(</span>ip<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Type<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-                  <li>Defined in <a
-                    href="https://github.com/kiyotd/torigoedesign-utils/blob/36d76be/src/validate/ipv4.ts#L7">validate/ipv4.ts:7</a>
-                  </li>
-                </ul>
+									<li>Defined in helper/getType.ts:9</li>
+								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Is the IPV4 address format correct?</p>
+									<p>Get the type</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>isIPv4(&quot;255.255.255.255&quot;); // true</p>
+									<dd><p>getType(123); // &quot;Number&quot;</p>
 									</dd>
 									<dt>example</dt>
-									<dd><p>isIPv4(&quot;255.255.255.256&quot;); // false</p>
+									<dd><p>getType(true); // &quot;Boolean&quot;</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>ip: <span class="tsd-signature-type">string</span></h5>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value you want to find out the type of</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -123,54 +124,34 @@
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
-        <ul>
-          <li class="globals  ">
-            <a href="../globals.html"><em>Globals</em></a>
-          </li>
-          <li class=" tsd-kind-module">
-            <a href="_convert_string_camelcasetokebabcase_.html">&quot;convert/string/
-              <wbr>
-              Camel
-              <wbr>
-              Case
-              <wbr>
-              ToKebab
-              <wbr>
-              Case&quot;</a>
-          </li>
-          <li class=" tsd-kind-module">
-            <a href="_convert_string_kebabcasetocamelcase_.html">&quot;convert/string/kebab
-              <wbr>
-              Case
-              <wbr>
-              ToCamel
-              <wbr>
-              Case&quot;</a>
-          </li>
-          <li class=" tsd-kind-module">
-            <a href="_helper_gettype_.html">&quot;helper/get
-              <wbr>
-              Type&quot;</a>
-          </li>
-          <li class=" tsd-kind-module">
-            <a href="_validate_email_.html">&quot;validate/email&quot;</a>
-          </li>
-          <li class="current tsd-kind-module">
-            <a href="_validate_ipv4_.html">&quot;validate/ipv4&quot;</a>
-          </li>
-          <li class=" tsd-kind-module">
-            <a href="_validate_isusername_.html">&quot;validate/is
-              <wbr>
-              User
-              <wbr>
-              Name&quot;</a>
-          </li>
-        </ul>
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_convert_string_camelcasetokebabcase_.html">&quot;convert/string/<wbr>Camel<wbr>Case<wbr>ToKebab<wbr>Case&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_convert_string_kebabcasetocamelcase_.html">&quot;convert/string/kebab<wbr>Case<wbr>ToCamel<wbr>Case&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_helper_gettype_.html">&quot;helper/get<wbr>Type&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_validate_email_.html">&quot;validate/email&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_validate_ipv4_.html">&quot;validate/ipv4&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_validate_isusername_.html">&quot;validate/is<wbr>User<wbr>Name&quot;</a>
+					</li>
+				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_validate_ipv4_.html#isipv4" class="tsd-kind-icon">isIPv4</a>
+						<a href="_helper_gettype_.html#gettype" class="tsd-kind-icon">get<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
@@ -181,16 +162,12 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
-      <ul class="tsd-legend">
-        <li class="tsd-kind-variable"><span
-          class="tsd-kind-icon">Variable</span></li>
-        <li class="tsd-kind-function"><span
-          class="tsd-kind-icon">Function</span></li>
-        <li class="tsd-kind-function tsd-has-type-parameter"><span
-          class="tsd-kind-icon">Function with type parameter</span></li>
-        <li class="tsd-kind-type-alias"><span
-          class="tsd-kind-icon">Type alias</span></li>
-      </ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
 		</div>
 	</div>
 </footer>
