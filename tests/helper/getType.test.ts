@@ -19,3 +19,12 @@ test("getType [] valid", () => {
 test("getType {} valid", () => {
   expect(getType({})).toBe("Object");
 });
+
+test("getType NaN valid", () => {
+  expect(getType(NaN)).toBe("NaN");
+});
+
+test("getType Infinity valid", () => {
+  expect(getType(Infinity)).toBe("Infinity");
+  expect(getType(-Infinity)).toBe("Infinity");
+});
