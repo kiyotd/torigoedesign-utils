@@ -1,6 +1,6 @@
 {
   "name": "@torigoedesign/utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/index.js",
   "description": "Utility library for me",
   "license": "MIT",
