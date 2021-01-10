@@ -18,11 +18,12 @@
     "url": "https://github.com/kiyotd/torigoedesign-utils/issues"
   },
   "scripts": {
-    "build": "tsc",
-    "build2": "npx webpack --config webpack.config.js",
     "test": "jest",
     "coverage": "jest --coverage",
-    "build:docs": "typedoc --out docs --exclude src/index.ts src"
+    "build": "npx webpack --config webpack.config.js",
+    "build:docs": "typedoc --out docs --exclude src/index.ts src",
+    "pack": "npm pack && yarn pack",
+    "publish": "npm publish"
   },
   "dependencies": {},
   "devDependencies": {
