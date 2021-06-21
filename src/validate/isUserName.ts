@@ -1,3 +1,11 @@
+/**
+ * Correct user name format?
+ *
+ * @example isUserName("name", 3, 5); // true
+ * @example isUserName("name", 5, 8); // false
+ * @example isUserName("_name"); // true
+ * @example isUserName("na"); // false
+ */
 type UserName = {
   userName: string;
   minLength?: number;
