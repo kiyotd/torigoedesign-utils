@@ -1,3 +1,9 @@
+type UserName = {
+  userName: string;
+  minLength?: number;
+  maxLength?: number;
+};
+
 /**
  * Correct user name format?
  *
@@ -6,12 +12,6 @@
  * @example isUserName("_name"); // true
  * @example isUserName("na"); // false
  */
-type UserName = {
-  userName: string;
-  minLength?: number;
-  maxLength?: number;
-};
-
 function isUserName<UserName>(userName: string, min = 3, max = 15): boolean {
   if (userName.length < min) return false;
   if (max < userName.length) return false;
