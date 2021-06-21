@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @torigoedesign/utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,11 +50,6 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
 			<h1>@torigoedesign/utils</h1>
 		</div>
 	</div>
@@ -75,9 +69,11 @@
 					<h2>Installation</h2>
 				</a>
 				<p>Using yarn:</p>
-				<pre><code class="language-bash">yarn add @torigoedesign/utils</code></pre>
+				<pre><code class="language-bash"><span style="color: #000000">yarn add @torigoedesign/utils</span>
+</code></pre>
 				<p>Using npm:</p>
-				<pre><code class="language-bash">npm install @torigoedesign/utils</code></pre>
+				<pre><code class="language-bash"><span style="color: #000000">npm install @torigoedesign/utils</span>
+</code></pre>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
@@ -88,29 +84,33 @@
 				<a href="#kebab-case-to-camelcase" id="kebab-case-to-camelcase" style="color: inherit; text-decoration: none;">
 					<h4>kebab-case to camelCase</h4>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { kebabCaseToCamelCase } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@torigoedesign/utils&quot;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">kebabCaseToCamelCase</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@torigoedesign/utils&quot;</span><span style="color: #000000">;</span>
 
-kebabCaseToCamelCase(<span class="hljs-string">&quot;set-user-name&quot;</span>); <span class="hljs-comment">// setUserName</span></code></pre>
+<span style="color: #795E26">kebabCaseToCamelCase</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;set-user-name&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// setUserName</span>
+</code></pre>
 				<a href="#camelcase-to-kebab-case" id="camelcase-to-kebab-case" style="color: inherit; text-decoration: none;">
 					<h4>camelCase to kebab-case</h4>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { camelCaseToKebabCase } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@torigoedesign/utils&quot;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">camelCaseToKebabCase</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@torigoedesign/utils&quot;</span><span style="color: #000000">;</span>
 
-camelCaseToKebabCase(<span class="hljs-string">&quot;setUserName&quot;</span>); <span class="hljs-comment">// set-user-name</span></code></pre>
+<span style="color: #795E26">camelCaseToKebabCase</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;setUserName&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// set-user-name</span>
+</code></pre>
 				<a href="#email-address-validation" id="email-address-validation" style="color: inherit; text-decoration: none;">
 					<h4>Email address validation</h4>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { isEmail } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@torigoedesign/utils&quot;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isEmail</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@torigoedesign/utils&quot;</span><span style="color: #000000">;</span>
 
-isEmail(<span class="hljs-string">&quot;example@example.com&quot;</span>); <span class="hljs-comment">// true</span>
-isEmail(<span class="hljs-string">&quot;example@exam@ple.com&quot;</span>); <span class="hljs-comment">// false</span></code></pre>
+<span style="color: #795E26">isEmail</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;example@example.com&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// true</span>
+<span style="color: #795E26">isEmail</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;example@exam@ple.com&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// false</span>
+</code></pre>
 				<a href="#ipv4-address-validation" id="ipv4-address-validation" style="color: inherit; text-decoration: none;">
 					<h4>IPv4 address validation</h4>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { isIPv4 } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@torigoedesign/utils&quot;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isIPv4</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@torigoedesign/utils&quot;</span><span style="color: #000000">;</span>
 
-isIPv4(<span class="hljs-string">&quot;255.255.255.255&quot;</span>); <span class="hljs-comment">// true</span>
-isIPv4(<span class="hljs-string">&quot;255.255.255.256&quot;</span>); <span class="hljs-comment">// false</span></code></pre>
+<span style="color: #795E26">isIPv4</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;255.255.255.255&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// true</span>
+<span style="color: #795E26">isIPv4</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;255.255.255.256&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// false</span>
+</code></pre>
 				<p>See the <a href="https://docs-torigoedesign-utils.vercel.app/">docs</a> for other functions.</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
@@ -121,26 +121,26 @@ isIPv4(<span class="hljs-string">&quot;255.255.255.256&quot;</span>); <span clas
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_convert_string_camelcasetokebabcase_.html">&quot;convert/string/<wbr>Camel<wbr>Case<wbr>ToKebab<wbr>Case&quot;</a>
+						<a href="modules/convert_string_camelcasetokebabcase.html">convert/string/<wbr>Camel<wbr>Case<wbr>ToKebab<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_convert_string_kebabcasetocamelcase_.html">&quot;convert/string/kebab<wbr>Case<wbr>ToCamel<wbr>Case&quot;</a>
+						<a href="modules/convert_string_kebabcasetocamelcase.html">convert/string/kebab<wbr>Case<wbr>ToCamel<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_helper_gettype_.html">&quot;helper/get<wbr>Type&quot;</a>
+						<a href="modules/helper_gettype.html">helper/get<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_validate_email_.html">&quot;validate/email&quot;</a>
+						<a href="modules/validate_email.html">validate/email</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_validate_ipv4_.html">&quot;validate/ipv4&quot;</a>
+						<a href="modules/validate_ipv4.html">validate/ipv4</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_validate_isusername_.html">&quot;validate/is<wbr>User<wbr>Name&quot;</a>
+						<a href="modules/validate_isusername.html">validate/is<wbr>User<wbr>Name</a>
 					</li>
 				</ul>
 			</nav>
@@ -156,10 +156,8 @@ isIPv4(<span class="hljs-string">&quot;255.255.255.256&quot;</span>); <span clas
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 		</div>
 	</div>

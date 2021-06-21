@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;convert/string/CamelCaseToKebabCase&quot; | @torigoedesign/utils</title>
+	<title>helper/getType | @torigoedesign/utils</title>
 	<meta name="description" content="Documentation for @torigoedesign/utils">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,13 +52,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@torigoedesign/utils</a>
 				</li>
 				<li>
-					<a href="_convert_string_camelcasetokebabcase_.html">&quot;convert/string/CamelCaseToKebabCase&quot;</a>
+					<a href="helper_gettype.html">helper/getType</a>
 				</li>
 			</ul>
-			<h1>Module &quot;convert/string/CamelCaseToKebabCase&quot;</h1>
+			<h1>Module helper/getType</h1>
 		</div>
 	</div>
 </header>
@@ -70,68 +69,50 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_convert_string_camelcasetokebabcase_.html#regex" class="tsd-kind-icon">regex</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_convert_string_camelcasetokebabcase_.html#camelcasetokebabcase" class="tsd-kind-icon">camel<wbr>Case<wbr>ToKebab<wbr>Case</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="helper_gettype.html#gettype" class="tsd-kind-icon">get<wbr>Type</a></li>
 							</ul>
 						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /([a-z0-9]|(?&#x3D;[A-Z]))([A-Z])/g</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/kiyotd/torigoedesign-utils/blob/3118591/src/convert/string/CamelCaseToKebabCase.ts#L4">convert/string/CamelCaseToKebabCase.ts:4</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Match at &quot;aA&quot;</p>
-						</div>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="camelcasetokebabcase" class="tsd-anchor"></a>
-					<h3>camel<wbr>Case<wbr>ToKebab<wbr>Case</h3>
+					<a name="gettype" class="tsd-anchor"></a>
+					<h3>get<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">camel<wbr>Case<wbr>ToKebab<wbr>Case<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Type<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/kiyotd/torigoedesign-utils/blob/3118591/src/convert/string/CamelCaseToKebabCase.ts#L11">convert/string/CamelCaseToKebabCase.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/kiyotd/torigoedesign-utils/blob/63ab675/src/helper/getType.ts#L9">helper/getType.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert from camel case to kebab case.</p>
+									<p>Get the type</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>camelCaseToKebabCase(&quot;setUserName&quot;); // &quot;set-user-name&quot;</p>
+									<dd><p>getType(123); // &quot;Number&quot;</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>getType(true); // &quot;Boolean&quot;</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value you want to find out the type of</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -143,36 +124,33 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="convert_string_camelcasetokebabcase.html">convert/string/<wbr>Camel<wbr>Case<wbr>ToKebab<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="convert_string_kebabcasetocamelcase.html">convert/string/kebab<wbr>Case<wbr>ToCamel<wbr>Case</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="_convert_string_camelcasetokebabcase_.html">&quot;convert/string/<wbr>Camel<wbr>Case<wbr>ToKebab<wbr>Case&quot;</a>
+						<a href="helper_gettype.html">helper/get<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_convert_string_kebabcasetocamelcase_.html">&quot;convert/string/kebab<wbr>Case<wbr>ToCamel<wbr>Case&quot;</a>
+						<a href="validate_email.html">validate/email</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_helper_gettype_.html">&quot;helper/get<wbr>Type&quot;</a>
+						<a href="validate_ipv4.html">validate/ipv4</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="_validate_email_.html">&quot;validate/email&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_validate_ipv4_.html">&quot;validate/ipv4&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="_validate_isusername_.html">&quot;validate/is<wbr>User<wbr>Name&quot;</a>
+						<a href="validate_isusername.html">validate/is<wbr>User<wbr>Name</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_convert_string_camelcasetokebabcase_.html#regex" class="tsd-kind-icon">regex</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_convert_string_camelcasetokebabcase_.html#camelcasetokebabcase" class="tsd-kind-icon">camel<wbr>Case<wbr>ToKebab<wbr>Case</a>
+						<a href="helper_gettype.html#gettype" class="tsd-kind-icon">get<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
@@ -184,10 +162,8 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 		</div>
 	</div>
